@@ -1,0 +1,72 @@
+<!--David Case
+	10/23/2022
+	IDT 1353 -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="styles/subscribe.css">
+
+	<link rel="stylesheet" href="styles/slicknav.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+					$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+				});
+		</script>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Halloween Store</title>
+</head>
+
+<body>
+	<header>
+		<img src= "images/pumpkinO.gif" alt="OSU pumpkin">
+		<h2>The Halloween Store</h2>
+		<h3>For the little Goblin in all of us!</h3>
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="products/productlist.html">Product List</a></li>
+			<li><a href="personal/personal.html">Personal</a></li>
+			<li><a href="decorating.html">Decorating Ideas</a>
+				<ul>
+					<li><a href="#">Outdoor</a></li>
+					<li><a href="#">Indoor</a></li>
+					<li><a href="#">Table</a></li>
+					<li><a href="#">Treats</a></li>
+				</ul>
+			</li>
+			<li><a href="email.html">Join Email</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section>
+			<h1>Thank you for joining my email list!</h1>
+			<p>You will be hearing form me soon. In the meantime, Please
+				feel free to browse through my site.
+			</p>
+		</section>
+		
+		<sidea>
+			<nav id="sidenav_menu">
+			<ul>
+				<li><a href="products/props.html">Props</a></li>
+				<li><a href="products/costumes.html">Costumes</a></li>
+				<li><a href="products/special.html">Special FX</a></li>
+				<li><a href="porducts/masks.html">Masks</a></li>
+			</ul>
+			</nav>
+		</sidea>
+	
+	</main>
+
+	<footer><p>&copy;2022 Ben Murach</p></footer>
+</body>
+</html>

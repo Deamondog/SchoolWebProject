@@ -1,0 +1,85 @@
+<!--David Case
+	10/23/2022
+	IDT 1353 -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="styles/email.css">
+
+	<link rel="stylesheet" href="styles/slicknav.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+					$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+				});
+		</script>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Halloween Store</title>
+</head>
+
+<body>
+	<header>
+		<img src= "images/pumpkinO.gif" alt="OSU pumpkin">
+		<h2>The Halloween Store</h2>
+		<h3>For the little Goblin in all of us!</h3>
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="products/productlist.html">Product List</a></li>
+			<li><a href="personal/personal.html">Personal</a></li>
+			<li><a href="decorations/decorating.html">Decorating Ideas</a>
+				<ul>
+					<li><a href="#">Outdoor</a></li>
+					<li><a href="#">Indoor</a></li>
+					<li><a href="#">Table</a></li>
+					<li><a href="#">Treats</a></li>
+				</ul>
+			</li>
+			<li><a href="email.html" class="current">Join Email</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section>
+			<h2>Please Enter the following information:</h2>
+			<form action="subscribe.html" method="get"
+        		name="subscribe_form" id="subscribe_form">
+				<fieldset id="reginfo">
+					<label for="first_name">First Name:</label>
+					<input type="text" name="first_name" id="first_name" required><br>
+					<label for="last_name">Last Name:</label>
+					<input type="text" name="last_name" id="last_name" required><br>
+					<label for="email">E-Mail:</label>
+					<input type="email" name="email" id="email" required><br>
+					<label for="zip">ZIP Code:</label>
+					<input type="text" name="zip" id="zip" placeholder="Optional but appreciated: 99999" pattern="\d{5}"><br>
+				</fieldset>
+				<fieldset id="button">
+					<label>&nbsp;</label>
+					<input type="submit" id="subscribe" value="Subscribe">
+			</form>
+		</section>
+		
+		<sidea>
+			<nav id="sidenav_menu">
+			<ul>
+				<li><a href="products/props.html">Props</a></li>
+				<li><a href="products/costumes.html">Costumes</a></li>
+				<li><a href="products/special.html">Special FX</a></li>
+				<li><a href="porducts/masks.html">Masks</a></li>
+			</ul>
+			</nav>
+		</sidea>
+	
+	</main>
+
+	<footer><p>&copy;2022 Ben Murach</p></footer>
+</body>
+</html>

@@ -1,0 +1,258 @@
+html {
+    font-family: sans-serif;
+    background-image: url('../images/bats.gif');
+    background-repeat: repeat;
+
+}
+
+body {
+    max-width: 960px;
+    width: 98%;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 2px 10px 10px 5px black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+header {
+    padding: 1em 1em;
+    border: 3px solid black;
+    background-image: -moz-linear-gradient(45deg, white 0%, orange 75%, black);
+    background-image: -webkit-linear-gradient(45deg, white 0%, orange 75%, black);
+    background-image: -o-linear-gradient(45deg, white 0%, orange 75%, black);
+    background-image: linear-gradient(45deg, white 0%, orange 75%, black);
+}
+
+header h2 {
+    font-size: 250%;
+    margin: 0 1em 0 1em;
+}
+
+header h3 {
+    font-size: 130%;
+    margin: 0 1em 1em 1em;
+}
+
+header img {
+    width: 100%;
+    max-width: 85px;
+    min-width: 40px;
+    float: left;
+    margin: 0 1em 0 0;
+}
+
+
+section {
+
+    width: 55%;
+    float: left;
+    padding: 1em;
+}
+
+section h2 {
+    font-size: 150%;
+
+}
+
+section p{
+    float: left;
+    width: 40%;
+    padding: 1em;
+    margin-left: 0;
+}
+
+
+section img {
+    float: left;
+    width: 100%;
+    max-width: 154px;
+    margin: 0 1em 0 0;
+    animation: moveimg 0.5s ease-in-out 6 alternate;
+    -webkit-animation: moveimg 0.5s ease-in-out 6 alternate;
+    -o-animation: moveimg 0.5s ease-in-out 6 alternate;
+    -moz-animation: moveimg 0.5s ease-in-out 6 alternate;
+} 
+
+@keyframes moveimg {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(200px);
+    }
+}
+
+footer {
+    padding: 1em 0;
+    font-size: 75%;
+    text-align: center;
+    border-top: 3px solid black;
+    background-image: -moz-linear-gradient(45deg, black 0%, orange 75%, white);
+    background-image: -webkit-linear-gradi ent(45deg, black 0%, orange 75%, white);
+    background-image: -o-linear-gradient(45deg, black 0%, orange 75%, white);
+    background-image: linear-gradient(45deg, black 0%, orange 75%, white);
+    clear: both;
+}
+
+#sideleft {
+    width: 17%;
+    padding: .25em;
+    float: left;
+}
+
+#sideleft ul {
+    list-style-type: none;
+    position: relative;
+    display: block;
+
+}
+
+#sideleft li {
+    padding: 5px;
+
+}
+
+#sideright {
+    width: 180px;
+    float: right;
+    background-color: #F5DEb3;
+    padding: 0.5em;
+    margin: 0;
+}
+
+#sideright ul{
+    list-style-type: none;
+    display: block;
+}
+
+#sideright ul a:link, a:visited {
+    color: black;
+}
+#sideright ul a:hover{
+    color:green;
+}
+
+#sideright img{
+    width: 64px;
+    padding-bottom: 1em;
+    transition: width 3s linear ;  
+    -webkit-transition: width 3s linear ;  
+    -o-transition: width 3s linear ;  
+    -moz-transition: width 3s linear ;  
+}
+
+
+#sideright img:hover{
+    width: 125px;
+
+}
+
+#sidenav_menu ul li a {
+    color: black;
+    display: block;
+    background-color: orange;
+    border: 2px solid black;
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+#nav_menu ul li {
+    float: left;
+    padding: 0%;
+    width: 20%;
+}
+
+#nav_menu ul li a {
+    display: block;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+#nav_menu a.current {
+    color: orange;
+}
+
+#nav_menu ul li a:hover {
+    background-color: grey;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+}
+
+#nav_menu ul ul li {
+    float: none;
+}
+
+#nav_menu ul li:hover ul {
+    display: block;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+    * {
+        font-size: 90%;
+    }
+
+    html {
+        background-image: none;
+    }
+
+    body {
+        box-shadow: none;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    #nav_menu {
+        display: none;
+    }
+
+    #mobile_menu {
+        display: block;
+
+    }
+
+    section,
+    sidea {
+        float: none;
+    }
+
+    sidea ul {
+        width: 20%;
+    }
+
+    .slicknav_menu {
+        background-color: rgb(72, 0, 0);
+    }
+}
+
+@media only screen and (max-width: 479px) {
+
+    header {
+        font-size: 75%;
+    }
+}
